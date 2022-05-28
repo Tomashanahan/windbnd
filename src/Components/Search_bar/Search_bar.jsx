@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { all_cities, set_countri } from "../../Redux/Actions";
+import { legacy_createStoreascreateStore } from "redux";
 
 function SearchBar() {
 	const { cities } = useSelector((state) => state);
@@ -44,6 +45,7 @@ function SearchBar() {
 			borderRadius="16px"
 			zIndex={30}
 			bg="#FFFFFF"
+			m={['auto','auto',0,0]}
 		>
 			<Menu isLazy>
 				<MenuButton
