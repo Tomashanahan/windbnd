@@ -14,7 +14,7 @@ function Cards() {
 				Stays in Finland
 			</Text>
 			{city.length > 0 ? (
-				<SimpleGrid columns={[1,1,1,2,3]} alignItems="center" justifyItems={"center"}>
+				<SimpleGrid columns={[1,1,1,2,2,2,3]} alignItems="center" justifyItems={"center"}>
 					{city?.map((elem, i) => {
 						return <Card key={i} {...elem} />;
 					})}

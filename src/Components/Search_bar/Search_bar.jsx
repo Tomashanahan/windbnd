@@ -16,7 +16,6 @@ import {
 } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { all_cities, set_countri } from "../../Redux/Actions";
-import { legacy_createStoreascreateStore } from "redux";
 
 function SearchBar() {
 	const { cities } = useSelector((state) => state);
